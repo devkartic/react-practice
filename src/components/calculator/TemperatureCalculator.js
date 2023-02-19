@@ -63,7 +63,7 @@ class TemperatureCalculator extends Component {
         const celsius = scale === 'fahrenheit' ? tryConvert(temperature, toCelsius) : temperature;
         const fahrenheit = scale === 'celsius' ? tryConvert(temperature, toFahrenheit) : temperature;
         return (
-            <Card color="info">
+            <Card color="info" className="mb-3">
                 <CardHeader><h3>Temperature Calculator</h3></CardHeader>
                 <CardBody>
                     <BoilingVerdict celsius={parseFloat(celsius)}></BoilingVerdict>
